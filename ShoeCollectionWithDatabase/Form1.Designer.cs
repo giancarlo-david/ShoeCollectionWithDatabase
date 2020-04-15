@@ -28,13 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvShoes = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.tbCurrentShoe = new System.Windows.Forms.TextBox();
             this.buttonAdd = new System.Windows.Forms.Button();
             this.buttonRemove = new System.Windows.Forms.Button();
             this.buttonExit = new System.Windows.Forms.Button();
+            this.labelShoeCount = new System.Windows.Forms.Label();
+            this.tbShoeCount = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvShoes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,8 +47,8 @@
             this.dgvShoes.Location = new System.Drawing.Point(211, 49);
             this.dgvShoes.Name = "dgvShoes";
             this.dgvShoes.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dgvShoes.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dgvShoes.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvShoes.Size = new System.Drawing.Size(577, 273);
             this.dgvShoes.TabIndex = 0;
             this.dgvShoes.SelectionChanged += new System.EventHandler(this.dgvShoes_SelectionChanged);
@@ -104,11 +106,32 @@
             this.buttonExit.UseVisualStyleBackColor = true;
             this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
+            // labelShoeCount
+            // 
+            this.labelShoeCount.AutoSize = true;
+            this.labelShoeCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelShoeCount.Location = new System.Drawing.Point(601, 30);
+            this.labelShoeCount.Name = "labelShoeCount";
+            this.labelShoeCount.Size = new System.Drawing.Size(80, 16);
+            this.labelShoeCount.TabIndex = 4;
+            this.labelShoeCount.Text = "Shoe Count:";
+            // 
+            // tbShoeCount
+            // 
+            this.tbShoeCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbShoeCount.Location = new System.Drawing.Point(687, 24);
+            this.tbShoeCount.Name = "tbShoeCount";
+            this.tbShoeCount.ReadOnly = true;
+            this.tbShoeCount.Size = new System.Drawing.Size(100, 22);
+            this.tbShoeCount.TabIndex = 5;
+            // 
             // MainMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 429);
+            this.Controls.Add(this.tbShoeCount);
+            this.Controls.Add(this.labelShoeCount);
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.buttonRemove);
             this.Controls.Add(this.buttonAdd);
@@ -133,6 +156,8 @@
         private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.Button buttonRemove;
         private System.Windows.Forms.Button buttonExit;
+        private System.Windows.Forms.Label labelShoeCount;
+        private System.Windows.Forms.TextBox tbShoeCount;
     }
 }
 

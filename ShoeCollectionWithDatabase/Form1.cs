@@ -22,6 +22,7 @@ namespace ShoeCollectionWithDatabase
             List<Shoe> shoeList = ShoeDB.GetAllShoes();
             dgvShoes.DataSource = shoeList;
 
+            tbShoeCount.Text = shoeList.Count.ToString();
         }
 
         private void buttonExit_Click(object sender, EventArgs e)
@@ -79,6 +80,7 @@ namespace ShoeCollectionWithDatabase
 
                     List<Shoe> shoeList = ShoeDB.GetAllShoes();
                     dgvShoes.DataSource = shoeList;
+                    tbShoeCount.Text = shoeList.Count.ToString();
                 }
             }
 
@@ -98,6 +100,7 @@ namespace ShoeCollectionWithDatabase
             {
                 List<Shoe> shoeList = ShoeDB.GetAllShoes();
                 dgvShoes.DataSource = shoeList;
+                tbShoeCount.Text = shoeList.Count.ToString();
             }
         }
     }
